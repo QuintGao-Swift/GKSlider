@@ -1,0 +1,16 @@
+PODS:
+  - GKSlider (1.0.0)
+
+DEPENDENCIES:
+  - GKSlider (from `../`)
+
+EXTERNAL SOURCES:
+  GKSlider:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GKSlider: 9c6c10089a2d1b39a92a701f099b662f6fd2c126
+
+PODFILE CHECKSUM: 4f148b1e1f87e6299ee75b16b1f687a244ee853d
+
+COCOAPODS: 1.12.1

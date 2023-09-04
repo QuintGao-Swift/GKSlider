@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22129"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="GKSlider_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="仿网易云" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMz-zv-eTx">
+                                <rect key="frame" x="30" y="89" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o4F-ir-6hF" customClass="GKSlider" customModule="GKSlider">
+                                <rect key="frame" x="30" y="120" width="370" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="fBI-oc-bqE"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KpH-wT-LBX" customClass="GKSlider" customModule="GKSlider">
+                                <rect key="frame" x="30" y="170" width="370" height="20"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="OKx-bO-tKk"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PK进度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dY9-AQ-8Cy">
+                                <rect key="frame" x="30" y="210" width="58" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="进度条" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUj-ML-V5E">
+                                <rect key="frame" x="30" y="301" width="52" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="渐变色" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShW-3s-VSH">
+                                <rect key="frame" x="30" y="361.33333333333331" width="52" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自定义滑块" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="omf-52-7wJ">
+                                <rect key="frame" x="30.000000000000007" y="421.66666666666669" width="86.666666666666686" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="仿微信" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGj-qx-qKx">
+                                <rect key="frame" x="30" y="492" width="52" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="滑杆动画" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6E-2W-pjp">
+                                <rect key="frame" x="30" y="562.33333333333337" width="70" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pka-Es-Ddb" customClass="GKSlider" customModule="GKSlider">
+                                <rect key="frame" x="30" y="241" width="370" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="GRg-Ck-rgK"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7pV-Im-pC8" customClass="GKSlider" customModule="GKSlider">
+                                <rect key="frame" x="30" y="391.66666666666669" width="370" height="10"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="RD0-HN-ipF"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BMK-fi-G58" customClass="GKSlider" customModule="GKSlider">
+                                <rect key="frame" x="30" y="452" width="370" height="20"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="OtM-dd-zfH"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BuV-vH-gqR" customClass="GKSlider" customModule="GKSlider">
+                                <rect key="frame" x="30" y="522.33333333333337" width="370" height="20"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="fh5-h3-ylP"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rGv-DM-QRs" customClass="GKSlider" customModule="GKSlider">
+                                <rect key="frame" x="30" y="592.66666666666663" width="370" height="20"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="2K9-nw-Q1K"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="poF-B9-sLM" customClass="GKSlider" customModule="GKSlider">
+                                <rect key="frame" x="30" y="331.33333333333331" width="370" height="10"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="e6z-Kn-b03"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nUj-ML-V5E" firstAttribute="top" secondItem="pka-Es-Ddb" secondAttribute="bottom" constant="20" id="2Nf-Rh-A6g"/>
+                            <constraint firstItem="cGj-qx-qKx" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="6Kl-Re-wqD"/>
+                            <constraint firstItem="PMz-zv-eTx" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="9sc-sk-n4L"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KpH-wT-LBX" secondAttribute="trailing" constant="10" id="ByL-CV-Ldg"/>
+                            <constraint firstItem="pka-Es-Ddb" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="CDR-qV-rSh"/>
+                            <constraint firstItem="H6E-2W-pjp" firstAttribute="top" secondItem="BuV-vH-gqR" secondAttribute="bottom" constant="20" id="EQo-OW-xdO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BMK-fi-G58" secondAttribute="trailing" constant="10" id="Ge0-vo-e0l"/>
+                            <constraint firstItem="poF-B9-sLM" firstAttribute="top" secondItem="nUj-ML-V5E" secondAttribute="bottom" constant="10" id="Glh-JG-S4I"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rGv-DM-QRs" secondAttribute="trailing" constant="10" id="Gt1-j8-uJI"/>
+                            <constraint firstItem="dY9-AQ-8Cy" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="Hg0-lj-2q2"/>
+                            <constraint firstItem="o4F-ir-6hF" firstAttribute="top" secondItem="PMz-zv-eTx" secondAttribute="bottom" constant="10" id="IL7-vr-APd"/>
+                            <constraint firstItem="poF-B9-sLM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="Ldp-ki-OFW"/>
+                            <constraint firstItem="BuV-vH-gqR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="NIc-6G-mvg"/>
+                            <constraint firstItem="KpH-wT-LBX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="OFv-aS-3Lr"/>
+                            <constraint firstItem="pka-Es-Ddb" firstAttribute="top" secondItem="dY9-AQ-8Cy" secondAttribute="bottom" constant="10" id="OOV-6Z-hg2"/>
+                            <constraint firstItem="omf-52-7wJ" firstAttribute="top" secondItem="7pV-Im-pC8" secondAttribute="bottom" constant="20" id="Qdr-1a-Khv"/>
+                            <constraint firstItem="H6E-2W-pjp" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="Snn-n0-yrL"/>
+                            <constraint firstItem="ShW-3s-VSH" firstAttribute="top" secondItem="poF-B9-sLM" secondAttribute="bottom" constant="20" id="UYK-a6-wly"/>
+                            <constraint firstItem="BMK-fi-G58" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="YBh-FL-cwr"/>
+                            <constraint firstItem="ShW-3s-VSH" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="ZH1-gb-gXJ"/>
+                            <constraint firstItem="o4F-ir-6hF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="aMi-SB-eKI"/>
+                            <constraint firstItem="BMK-fi-G58" firstAttribute="top" secondItem="omf-52-7wJ" secondAttribute="bottom" constant="10" id="bTT-fv-EaC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pka-Es-Ddb" secondAttribute="trailing" constant="10" id="bgW-lG-frA"/>
+                            <constraint firstItem="BuV-vH-gqR" firstAttribute="top" secondItem="cGj-qx-qKx" secondAttribute="bottom" constant="10" id="dID-rq-O4U"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="o4F-ir-6hF" secondAttribute="trailing" constant="10" id="eEF-8f-4sM"/>
+                            <constraint firstItem="rGv-DM-QRs" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="hjV-uj-Xax"/>
+                            <constraint firstItem="cGj-qx-qKx" firstAttribute="top" secondItem="BMK-fi-G58" secondAttribute="bottom" constant="20" id="k4b-Zj-Fwm"/>
+                            <constraint firstItem="7pV-Im-pC8" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="kPW-pD-vhf"/>
+                            <constraint firstItem="dY9-AQ-8Cy" firstAttribute="top" secondItem="KpH-wT-LBX" secondAttribute="bottom" constant="20" id="nXa-Ey-mfh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7pV-Im-pC8" secondAttribute="trailing" constant="10" id="oIF-dq-b5t"/>
+                            <constraint firstItem="nUj-ML-V5E" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="on3-JN-1g1"/>
+                            <constraint firstItem="KpH-wT-LBX" firstAttribute="top" secondItem="o4F-ir-6hF" secondAttribute="bottom" constant="10" id="q9Z-iM-10U"/>
+                            <constraint firstItem="omf-52-7wJ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="r0a-VL-qfD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BuV-vH-gqR" secondAttribute="trailing" constant="10" id="rqs-jt-V3P"/>
+                            <constraint firstItem="PMz-zv-eTx" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="30" id="uLo-vh-SnN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="poF-B9-sLM" secondAttribute="trailing" constant="10" id="v4q-qv-kWE"/>
+                            <constraint firstItem="rGv-DM-QRs" firstAttribute="top" secondItem="H6E-2W-pjp" secondAttribute="bottom" constant="10" id="wso-9N-clT"/>
+                            <constraint firstItem="7pV-Im-pC8" firstAttribute="top" secondItem="ShW-3s-VSH" secondAttribute="bottom" constant="10" id="xuH-46-Sh1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="customSlider" destination="BMK-fi-G58" id="yCf-gt-75b"/>
+                        <outlet property="gradientSlider" destination="7pV-Im-pC8" id="4ap-AN-HmU"/>
+                        <outlet property="lineSlider" destination="rGv-DM-QRs" id="FnB-cI-xau"/>
+                        <outlet property="pkSlider" destination="pka-Es-Ddb" id="y9R-sN-J5x"/>
+                        <outlet property="progressSlider" destination="poF-B9-sLM" id="QlD-zt-9XK"/>
+                        <outlet property="wxSlider" destination="BuV-vH-gqR" id="avo-Y5-fjv"/>
+                        <outlet property="wyImgSlider" destination="KpH-wT-LBX" id="hb2-FC-Ra3"/>
+                        <outlet property="wySlider" destination="o4F-ir-6hF" id="LQ9-iK-daw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7.2000000000000002" y="-36.431784107946029"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
