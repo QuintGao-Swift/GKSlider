@@ -109,11 +109,28 @@ open class GKLineLoadingView: UIView {
         }
     }
     
+    private var lineHeight: CGFloat = 0
+    
     public convenience init(frame: CGRect, lineHeight: CGFloat) {
         self.init(frame: frame)
+        self.lineHeight = lineHeight
         backgroundColor = .white
         center = CGPoint(x: frame.width * 0.5, y: frame.height * 0.5)
         bounds = CGRect(x: 0, y: 0, width: 1.0, height: lineHeight)
+    }
+    
+    open override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        let frame = superview?.frame ?? .zero
+        center = CGPoint(x: frame.width * 0.5, y: frame.height * 0.5)
+        bounds = CGRect(x: 0, y: 0, width: 1.0, height: lineHeight)
+        
+        if let animationGroup = layer.animation(forKey: "lineLoading") as? CAAnimationGroup {
+            if let scaleAnimation = animationGroup.animations?.first as? CABasicAnimation {
+                scaleAnimation.toValue = frame.width
+            }
+        }
     }
     
     public func startLoading() {
@@ -433,6 +450,9 @@ open class GKSlider: UIView {
     
     open override func layoutSubviews() {
         super.layoutSubviews()
+        
+        let loadings = subviews.filter { $0.isKind(of: GKLineLoadingView.self) }
+        loadings.forEach { $0.frame = bounds }
         
         if sliderBtn.isHidden {
             bgProgressView.frame.size.width = self.frame.size.width
