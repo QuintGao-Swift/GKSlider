@@ -128,6 +128,9 @@ open class GKLineLoadingView: UIView {
         
         if let animationGroup = layer.animation(forKey: "lineLoading") as? CAAnimationGroup {
             if let scaleAnimation = animationGroup.animations?.first as? CABasicAnimation {
+                if let value = scaleAnimation.toValue as? CGFloat, value == frame.width {
+                    return
+                }
                 scaleAnimation.toValue = frame.width
             }
         }
@@ -452,7 +455,11 @@ open class GKSlider: UIView {
         super.layoutSubviews()
         
         let loadings = subviews.filter { $0.isKind(of: GKLineLoadingView.self) }
-        loadings.forEach { $0.frame = bounds }
+        loadings.forEach {
+            let center = CGPointMake(bounds.width * 0.5, bounds.height * 0.5)
+            if $0.center == center { return }
+            $0.frame = bounds
+        }
         
         if sliderBtn.isHidden {
             bgProgressView.frame.size.width = self.frame.size.width
